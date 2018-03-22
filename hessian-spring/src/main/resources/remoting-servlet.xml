@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <!-- 使用Spring的HessianServie做代理 -->
+    <bean name="/loginImpl"
+          class="org.springframework.remoting.caucho.HessianServiceExporter">
+        <!-- service引用具体的实现实体Bean-->
+        <property name="service" ref="loginImpl"/>
+        <property name="serviceInterface" value="com.cn.wddqz.manage.ILogin"/>
+    </bean>
+
+</beans>

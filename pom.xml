@@ -11,6 +11,7 @@
     <modules>
         <module>hessian</module>
         <module>thrift</module>
+        <module>hessian-spring</module>
     </modules>
     <packaging>pom</packaging>
 
